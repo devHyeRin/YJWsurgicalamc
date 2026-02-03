@@ -1,0 +1,12 @@
+{
+  "name": "animal-hospital-web",
+  "private": true,
+  "scripts": {
+    "build:dist:docker": "powershell -ExecutionPolicy Bypass -File scripts/build-dist.ps1",
+    "local:docker": "powershell -ExecutionPolicy Bypass -File scripts/run-local.ps1",
+    "start": "node web.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
