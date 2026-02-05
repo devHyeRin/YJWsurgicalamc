@@ -1,33 +1,25 @@
-import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import './assets/styles/common.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={viteLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="app-layout">
+
+      {/* Header 영역(임시) */}
+      <header className="site-header">
+        {/* 임시 */}
+        Header 영역
+      </header>
+
+      {/* Main 영역 */}
+      <main className="site-main">
+        <h1>메인 콘텐츠 영역</h1>
+        <p>Footer / Header 레이아웃 확인용</p>
+      </main>
+
+      {/* Footer 영역 */}
+      {/* <Footer /> */}
+      
+    </div>
   )
 }
 

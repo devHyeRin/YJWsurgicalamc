@@ -137,3 +137,23 @@ button{ border: 0; background: none; padding: 0; cursor: pointer; }
 }
 .site-footer a{ color: inherit; }
 .site-footer .muted{ color: var(--footer-muted); }
+
+
+/* ----------------- App.tsx Layout ----------------- */
+.app-layout{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header{
+  flex-shrink: 0;
+  /* Header 전용 스타일은 Header 컴포넌트 CSS에서 해야함
+     이 클래스명은 Header 컴포넌트 div에 지정해줘야함
+  */
+}
+
+.site-main{
+  flex: 1;
+  padding: 2rem; /* 임시, 나중에 pages 단위로 조절 가능 */
+}
