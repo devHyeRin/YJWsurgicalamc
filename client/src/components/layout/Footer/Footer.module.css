@@ -1,0 +1,65 @@
+.footer {
+  padding: 3rem 0 2rem;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Info */
+.info {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.brand {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.address {
+  margin-bottom: 0.75rem;
+}
+
+.meta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meta li {
+  margin-bottom: 0.25rem;
+}
+
+/* Links */
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.policy {
+  font-size: 0.875rem;
+}
+
+.divider {
+  margin: 0 0.5rem;
+  color: var(--footer-muted);
+}
+
+.sns a {
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 0.75rem;
+  color: var(--footer-muted);
+}

@@ -1,11 +1,11 @@
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 function FooterCopyright(){
 
     return(
-
-        <p>© {new Date().getFullYear()} HBM Labs. Designed & Developed by HBM Labs.</p>
-
+        <p className={styles.copyright}>
+            © {new Date().getFullYear()} HBM Labs. Designed & Developed by HBM Labs.
+        </p>
     );
 }
 export default FooterCopyright;

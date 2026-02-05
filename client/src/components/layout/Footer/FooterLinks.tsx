@@ -1,17 +1,17 @@
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 function FooterLinks(){
 
     return(
         <div>
-            <div>
-                <nav>
-                    <a>이용약관</a>
-                    <span>|</span>
-                    <a>개인정보처리방침</a>
+            <div className={styles.links}>
+                <nav className={styles.policy}>
+                    <a href="/terms">이용약관</a>
+                    <span className={styles.divider}>|</span>
+                    <a href="/privacy">개인정보처리방침</a>
                 </nav>
 
-                <div>
+                <div className={styles.sns}>
                     <a href="https://blog.naver.com/yjwsurgicalamc" target="_blank" rel="noopener noreferrer"
                         aria-label="네이버 블로그"
                     >
