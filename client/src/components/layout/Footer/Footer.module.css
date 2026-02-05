@@ -1,11 +1,13 @@
 .footer {
-  padding: 3rem 0 2rem;
+  background: var(--footer-bg);
+  padding: 4rem 0 2rem;
 }
 
 .inner {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 /* Info */
@@ -16,9 +18,10 @@
 
 .brand {
   display: block;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .address {
@@ -32,7 +35,9 @@
 }
 
 .meta li {
-  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  color: var(--footer-muted);
+  line-height: 2.5;
 }
 
 /* Links */
@@ -48,18 +53,43 @@
   font-size: 0.875rem;
 }
 
+.policy a {
+  color: var(--footer-text);
+}
+
+.policy a:hover {
+  text-decoration: underline;
+}
+
 .divider {
   margin: 0 0.5rem;
   color: var(--footer-muted);
 }
 
 .sns a {
-  margin-right: 0.75rem;
   font-size: 1.25rem;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.sns a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 /* Copyright */
 .copyright {
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.12);
   font-size: 0.75rem;
   color: var(--footer-muted);
+  text-align: center;
+}
+
+
+/*반응형*/
+@media (max-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
 }
