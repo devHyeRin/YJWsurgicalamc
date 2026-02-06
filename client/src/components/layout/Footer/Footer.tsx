@@ -7,14 +7,16 @@ function Footer(){
 
     return(
         <footer className={`site-footer ${styles.footer}`}>
-            <div className="container">
-                {/* 상단 영역 */}
-                <div className={styles.inner}>
+            <div className={`container ${styles.inner}`}>
+                {/* 상단 */}
+                <div className={styles.top}>
                     <FooterInfo />
                     <FooterLinks />
                 </div>
 
-                {/* 하단 카피라이트 */}
+                <hr className={styles.dividerLine} />
+
+                {/* 하단 */}
                 <FooterCopyright />
             </div>
         </footer>
