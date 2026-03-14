@@ -22,15 +22,15 @@ function FooterInfo(){
                     target="_blank" rel="noopener noreferrer"
                     aria-label="네이버 지도"
                 >
-                    서울 서초구 방배로 98 나우빌딩 2층
+                    서울특별시 서초구 방배로 98, 2층 (방배동, 나우빌딩)
                 </a>
             </address>
 
             <div className={styles.meta}>
                 <ul>
-                    <li>사업자등록번호 | </li>
-                    <li>통신판매업신고 | </li>
-                    <li>대표자명 : 윤장원</li>
+                    <li>사업자등록번호 : 150-19-02396</li>
+                    <li>통신판매업신고 : </li>
+                    <li>대표자 : 윤장원</li>
                     <li>
                         E-mail : {' '}
                         <a href="mailto:test@gmail.com">test@gmail.com</a>

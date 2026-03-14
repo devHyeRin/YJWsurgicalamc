@@ -14,7 +14,7 @@ function App() {
         <MainPage/>
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
