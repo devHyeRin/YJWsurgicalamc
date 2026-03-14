@@ -157,3 +157,8 @@ button{ border: 0; background: none; padding: 0; cursor: pointer; }
   flex: 1;
   padding: 2rem; /* 임시, 나중에 pages 단위로 조절 가능 */
 }
+
+.app-layout {
+  width: 100%;
+  min-height: 100vh;
+}
