@@ -1,4 +1,5 @@
 import './assets/styles/common.css'
+import Footer from './components/layout/Footer/Footer'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       </main>
 
       {/* Footer 영역 */}
-      {/* <Footer /> */}
+      <Footer />
       
     </div>
   )
